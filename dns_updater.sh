@@ -18,7 +18,7 @@ RESPONSE=$(curl -s -X PUT "https://api.cloudflare.com/client/v4/zones/$ZONE_ID/d
         -H "X-Auth-Email: $AUTH_EMAIL" \
         -H "X-Auth-Key: $CLOUDFLARE_API_KEY" \
         -H "Content-Type: application/json" \
-        --data '{"type":"$RECORD_TYPE","name":"$RECORD_NAME","content":"'$IP'","ttl":$TTL}')
+        --data '{"type":"$RECORD_TYPE","name":"'$RECORD_NAME'","content":"'$IP'","ttl":'$TTL'}')
 
 if [ $(echo "$RESPONSE" | grep '"success":true' | wc -l) -eq 1 ]; then
         echo "$DATE|IP:$IP|CF Update: Success"
