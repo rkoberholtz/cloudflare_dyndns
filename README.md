@@ -11,3 +11,8 @@ When executed, the script will perform a lookup on the DNS record and compare th
 - Linux host to run the script within your network
 
 
+Example Output:
+```
+root@www:/Scripts# ./dns_updater.sh
+20210715-121018|Record IP: <REDACTED>|Pub IP: <REDACTED>|CF Update: Skipped
+```
