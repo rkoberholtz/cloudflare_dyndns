@@ -1,4 +1,4 @@
-*** This project lives at https://gitlab.rickelobe.com/Scripts/cloudflare-dns-updater ***
+This project lives at [https://gitlab.rickelobe.com](https://gitlab.rickelobe.com/Scripts/cloudflare-dns-updater)
 
 # Description
 Use this script to keep a CloudFlare DNS record up to date with your current public IP address.  
